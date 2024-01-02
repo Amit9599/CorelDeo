@@ -1,0 +1,126 @@
+/* Plans.css */
+
+.plans-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .plans-form {
+    width: 60%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-submit {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.status-radio-group {
+  display: flex;
+}
+
+.status-radio-group label {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.status-radio-group input {
+  margin-right: 5px;
+} 
+
+/* Lists CSS */
+
+/* plans.css */
+
+.plan-list-container {
+  max-width: 500px;
+  margin-top: 20px;
+  margin-left: 140px;
+}
+
+.plan-list-container h2 {
+  color: #333;
+}
+
+.plan-list-container table {
+  width: 160%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.plan-list-container th,
+.plan-list-container td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.plan-list-container th {
+  background-color: #f2f2f2;
+}
+
+.plan-list-container tr:hover {
+  background-color: #f5f5f5;
+}
+
+.light-icon {
+  color: #ec0e0e; 
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  /* padding: 0; */
+}

@@ -1,0 +1,50 @@
+/* userList.css */
+
+.user-list-container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .user-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .user-list li {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .user-details {
+    flex: 2;
+  }
+  
+  .user-actions {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .icon-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .edit-button {
+    color: #3498db; /* Blue color for edit button */
+  }
+  
+  .delete-button {
+    color: #e74c3c; /* Red color for delete button */
+  }
+  
+  .icon {
+    font-size: 18px;
+  }
+  

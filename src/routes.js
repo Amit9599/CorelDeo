@@ -35,7 +35,9 @@ const Range = React.lazy(() => import('./views/forms/range/Range'))
 const Select = React.lazy(() => import('./views/forms/select/Select'))
 const Validation = React.lazy(() => import('./views/forms/validation/Validation'))
 
-const Charts = React.lazy(() => import('./views/charts/Charts'))
+// const Charts = React.lazy(() => import('./views/plans/Plans'))
+const newPlans = React.lazy(() => import('./views/plans/newPlans'))
+const lists = React.lazy(() => import('./views/plans/Lists'))
 
 // Icons
 const CoreUIIcons = React.lazy(() => import('./views/icons/coreui-icons/CoreUIIcons'))
@@ -50,8 +52,15 @@ const Toasts = React.lazy(() => import('./views/notifications/toasts/Toasts'))
 
 const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 
+// users
+const userLists = React.lazy(() => import('./views/users/ActiveUser'))
+
+// 404 page
+const NotFound = React.lazy(() => import('./views/pages/page404/Page404'))
+
 const routes = [
-  { path: '/', exact: true, name: 'Home' },
+  { path: '*', name: 'Not Found', element: NotFound },
+  { path: '/dashboard', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', element: Dashboard },
   { path: '/theme', name: 'Theme', element: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', element: Colors },
@@ -75,7 +84,8 @@ const routes = [
   { path: '/buttons/buttons', name: 'Buttons', element: Buttons },
   { path: '/buttons/dropdowns', name: 'Dropdowns', element: Dropdowns },
   { path: '/buttons/button-groups', name: 'Button Groups', element: ButtonGroups },
-  { path: '/charts', name: 'Charts', element: Charts },
+  { path: '/plans/new_plan', name: 'New Plans', element: newPlans },
+  { path: '/plans/lists', name: 'Lists', element: lists },
   { path: '/forms', name: 'Forms', element: FormControl, exact: true },
   { path: '/forms/form-control', name: 'Form Control', element: FormControl },
   { path: '/forms/select', name: 'Select', element: Select },
@@ -95,6 +105,7 @@ const routes = [
   { path: '/notifications/modals', name: 'Modals', element: Modals },
   { path: '/notifications/toasts', name: 'Toasts', element: Toasts },
   { path: '/widgets', name: 'Widgets', element: Widgets },
+  { path: '/user/active', name: 'Active User', element: userLists },
 ]
 
 export default routes
